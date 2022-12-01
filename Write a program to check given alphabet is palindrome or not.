@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<string.h>
+void main(){
+    char c[]="MADAM";
+    int p=strlen(c),l=0;
+    for(int i=0;i<p/2;i++){
+        if(c[0+i]==c[p-1-i]){
+            l++;
+        }
+    }if (l==p/2){
+        printf("palindrome ");
+    }else{
+        printf("no");
+    }
+    
+}
